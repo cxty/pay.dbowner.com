@@ -1,0 +1,56 @@
+{include file='header.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.discount.js"></script>
+
+<div class="changedb_box">
+	<ul class="chagedb_ul">
+		<li class="rmd_msg">
+			{$Lang.WithrawRemind}
+		</li>
+		<li>
+			<div class="ch_ul_title">{$Lang.YourIntegralBalance}：</div>
+			<span class="c_y" id="change_db">{$account.db}</span>{$Lang.IntegralBalanceUnion}
+		</li>
+		<li style="display:none;">
+			<div class="ch_ul_title">{$Lang.YourAccountBalance}：</div>
+			<span class="c_y" id="change_money">{$account.money}</span>{$Lang.AccountBalanceUnion}
+		</li>
+		<li style="display:none;">
+			<div class="ch_ul_title">{$Lang.TakeMoneyAccount}：</div>
+			<div class="ch_ul_pay">
+				<div class="changedb_payicon">
+					<input type="radio" name="paytype" id="alipay_icon" value="alipay" checked />
+					<label for="alipay_icon" class="alipay_icon b_r">&nbsp;</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="ch_ul_title">{$Lang.DBToMoneyRate}：</div>1/{$account.rate}
+		</li>
+		<li>
+			<div class="ch_ul_title">{$Lang.ChangeDBNum}：</div>
+			<input type="text" class="input" name="coin" size="8" />{$Lang.IntegralBalanceUnion}
+		</li>
+		<li class="pay_btn">
+			<div class="changedb_btn"><a id="sub_btn" class="btn" href="javascript:void(0);">{$Lang.ChangeToMoney}</a></div>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+<!--
+var discount = new Tdiscount();
+discount.JS_LANG = {$JS_LANG};
+discount.jsonData = {$jsonData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	discount.init();
+});
+//释放
+$(window).unload(function(){
+	discount = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

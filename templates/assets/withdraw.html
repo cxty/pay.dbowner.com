@@ -1,0 +1,43 @@
+{include file='header.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.withdraw.js"></script>
+
+<form id="myform" method="post" action="/assets/addwithdraw">
+<div class="changedb_box">
+	<ul class="chagedb_ul">
+		
+		<li class="rmd_msg">
+			{$Lang.WithrawRemind}
+		</li>
+		<li>
+			<div class="ch_ul_title">{$Lang.YourAccountBalance}：</div>
+			<span class="c_y" id="change_money">{$account.money}</span>{$Lang.AccountBalanceUnion}
+		</li>
+		<li>
+			<div class="ch_ul_title">{$Lang.TakeMoneyNum}：</div>
+			<input type="text" class="input" name="coin" size="8" />{$Lang.AccountBalanceUnion}
+		</li>
+		<li>
+			<div class="changedb_btn"><a id="sub_btn" class="btn" href="javascript:void(0);">{$Lang.ConfirmTakeMoney}</a></div>
+		</li>
+	</ul>
+</div>
+</form>
+
+<script type="text/javascript">
+<!--
+var withdraw = new Twithdraw();
+withdraw.JS_LANG = {$JS_LANG};
+withdraw.jsonData = {$jsonData}
+//页面完全再入后初始化
+$(document).ready(function(){
+	withdraw.init();
+});
+//释放
+$(window).unload(function(){
+	withdraw = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

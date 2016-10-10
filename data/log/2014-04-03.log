@@ -1,0 +1,18 @@
+2014-04-03 02:29:56 | 110.75.145.2 | /index.php/robots.txt |robots.txt模块不存在
+2014-04-03 15:20:16 | 220.181.158.109 | /index.php/file/MyDownLoad.ashx |file模块不存在
+2014-04-03 15:20:16 | 220.181.158.109 | /index.php/file/PackagDownload.ashx |file模块不存在
+2014-04-03 15:20:16 | 220.181.158.109 | /index.php/FileDownloadServlet |FileDownloadServlet模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/setup/setup1.jsp |setup模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/examlist/id-12,pid-104,key-'and(char(106)=0)or'1'='.aspx |examlist模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/file/EmailDownload.ashx |file模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/file/UDFDownLoad.ashx |file模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/file/DownLoad.ashx |file模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/file/FileUpload.asmx/UploadFileBase64 |file模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/file/FileUpload.asmx/CopyFile |file模块不存在
+2014-04-03 15:20:17 | 220.181.158.109 | /index.php/download.jsp |download.jsp模块不存在
+2014-04-03 15:20:17 | .1.1.1', 220.181.158.109 | /index.php/mx_form/order_save.php |mx_form模块不存在
+2014-04-03 15:26:48 | 220.181.158.109 | /index.php/member.php |member.php模块不存在
+2014-04-03 15:26:48 | 220.181.158.109 | /index.php/apas/portal/tableDownload/download.jsp |apas模块不存在
+2014-04-03 15:26:49 | 220.181.158.109 | /index.php/jvideo/down.jsp |jvideo模块不存在
+2014-04-03 15:26:49 | 220.181.158.109 | /index.php/jiep/down.jsp |jiep模块不存在
+2014-04-03 15:26:49 | 220.181.158.109 | /index.php/admin/ |admin模块不存在

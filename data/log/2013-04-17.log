@@ -1,0 +1,5 @@
+2013-04-17 10:14:35 | 127.0.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-04-17 10:34:56 | 127.0.0.1 | /index.php/developer/addType |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT AutoID FROM `tbAppTypeInfo`  WHERE  `aName`='新闻' <br>
+						<b>错误详情</b>: Unknown column 'aName' in 'where clause'<br>
+						<b>错误代码</b>:1054<br>

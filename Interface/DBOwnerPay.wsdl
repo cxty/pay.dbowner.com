@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://pay.dbowner.com/DBOwnerPay/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DBOwnerPay" targetNamespace="http://pay.dbowner.com/DBOwnerPay/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://pay.dbowner.com/DBOwnerPay/">
+      <xsd:element name="Auth">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="user" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AuthResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="SelectUserInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SelectUserInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetUserInfoList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetUserInfoListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="SelectAccountBaseInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SelectAccountBaseInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAccountBaseInfoList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAccountBaseInfoListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="SelectAssetsTradeLogInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SelectAssetsTradeLogInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAssetsTradeLogInfoList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAssetsTradeLogInfoListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="SelectDBTradeLogInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SelectDBTradeLogInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBTradeLogInfoList">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBTradeLogInfoListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetDBTotal">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBTotalResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetDBRecharge">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBRechargeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetDBEnchash">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBEnchashResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetDBEarn">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBEarnResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetDBConsume">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="data" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDBConsumeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="return" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+    </xsd:schema>
+  </wsdl:types>
+
+  <wsdl:message name="SOAPAuth">
+    <wsdl:part name="Auth" element="tns:Auth"/>
+  </wsdl:message>
+
+  <wsdl:message name="SelectUserInfoRequest">
+    <wsdl:part element="tns:SelectUserInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SelectUserInfoResponse">
+    <wsdl:part element="tns:SelectUserInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoListRequest">
+    <wsdl:part element="tns:GetUserInfoList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoListResponse">
+    <wsdl:part element="tns:GetUserInfoListResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SelectAccountBaseInfoRequest">
+    <wsdl:part element="tns:SelectAccountBaseInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SelectAccountBaseInfoResponse">
+    <wsdl:part element="tns:SelectAccountBaseInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetAccountBaseInfoListRequest">
+    <wsdl:part element="tns:GetAccountBaseInfoList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetAccountBaseInfoListResponse">
+    <wsdl:part element="tns:GetAccountBaseInfoListResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SelectAssetsTradeLogInfoRequest">
+    <wsdl:part element="tns:SelectAssetsTradeLogInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SelectAssetsTradeLogInfoResponse">
+    <wsdl:part element="tns:SelectAssetsTradeLogInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetAssetsTradeLogInfoListRequest">
+    <wsdl:part element="tns:GetAssetsTradeLogInfoList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetAssetsTradeLogInfoListResponse">
+    <wsdl:part element="tns:GetAssetsTradeLogInfoListResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="SelectDBTradeLogInfoRequest">
+    <wsdl:part element="tns:SelectDBTradeLogInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SelectDBTradeLogInfoResponse">
+    <wsdl:part element="tns:SelectDBTradeLogInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBTradeLogInfoListRequest">
+    <wsdl:part element="tns:GetDBTradeLogInfoList" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBTradeLogInfoListResponse">
+    <wsdl:part element="tns:GetDBTradeLogInfoListResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetDBTotalRequest">
+    <wsdl:part element="tns:GetDBTotal" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBTotalResponse">
+    <wsdl:part element="tns:GetDBTotalResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetDBRechargeRequest">
+    <wsdl:part element="tns:GetDBRecharge" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBRechargeResponse">
+    <wsdl:part element="tns:GetDBRechargeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetDBEnchashRequest">
+    <wsdl:part element="tns:GetDBEnchash" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBEnchashResponse">
+    <wsdl:part element="tns:GetDBEnchashResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetDBEarnRequest">
+    <wsdl:part element="tns:GetDBEarn" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBEarnResponse">
+    <wsdl:part element="tns:GetDBEarnResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetDBConsumeRequest">
+    <wsdl:part element="tns:GetDBConsume" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetDBConsumeResponse">
+    <wsdl:part element="tns:GetDBConsumeResponse" name="parameters"/>
+  </wsdl:message>
+
+  <wsdl:portType name="DBOwnerPay">
+
+    <wsdl:operation name="SelectUserInfo">
+      <wsdl:input message="tns:SelectUserInfoRequest"/>
+      <wsdl:output message="tns:SelectUserInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoList">
+      <wsdl:input message="tns:GetUserInfoListRequest"/>
+      <wsdl:output message="tns:GetUserInfoListResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectAccountBaseInfo">
+      <wsdl:input message="tns:SelectAccountBaseInfoRequest"/>
+      <wsdl:output message="tns:SelectAccountBaseInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBaseInfoList">
+      <wsdl:input message="tns:GetAccountBaseInfoListRequest"/>
+      <wsdl:output message="tns:GetAccountBaseInfoListResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectAssetsTradeLogInfo">
+      <wsdl:input message="tns:SelectAssetsTradeLogInfoRequest"/>
+      <wsdl:output message="tns:SelectAssetsTradeLogInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsTradeLogInfoList">
+      <wsdl:input message="tns:GetAssetsTradeLogInfoListRequest"/>
+      <wsdl:output message="tns:GetAssetsTradeLogInfoListResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectDBTradeLogInfo">
+      <wsdl:input message="tns:SelectDBTradeLogInfoRequest"/>
+      <wsdl:output message="tns:SelectDBTradeLogInfoResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBTradeLogInfoList">
+      <wsdl:input message="tns:GetDBTradeLogInfoListRequest"/>
+      <wsdl:output message="tns:GetDBTradeLogInfoListResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBTotal">
+      <wsdl:input message="tns:GetDBTotalRequest"/>
+      <wsdl:output message="tns:GetDBTotalResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBRecharge">
+      <wsdl:input message="tns:GetDBRechargeRequest"/>
+      <wsdl:output message="tns:GetDBRechargeResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBEnchash">
+      <wsdl:input message="tns:GetDBEnchashRequest"/>
+      <wsdl:output message="tns:GetDBEnchashResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBEarn">
+      <wsdl:input message="tns:GetDBEarnRequest"/>
+      <wsdl:output message="tns:GetDBEarnResponse"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBConsume">
+      <wsdl:input message="tns:GetDBConsumeRequest"/>
+      <wsdl:output message="tns:GetDBConsumeResponse"/>
+    </wsdl:operation>
+
+  </wsdl:portType>
+
+  <wsdl:binding name="DBOwnerPaySOAP" type="tns:DBOwnerPay">
+    <soap:binding style="document"
+      transport="http://schemas.xmlsoap.org/soap/http" />
+
+    <wsdl:operation name="SelectUserInfo">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/SelectUserInfo" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoList">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetUserInfoList" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectAccountBaseInfo">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/SelectAccountBaseInfo" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBaseInfoList">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetAccountBaseInfoList" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectAssetsTradeLogInfo">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/SelectAssetsTradeLogInfo" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssetsTradeLogInfoList">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetAssetsTradeLogInfoList" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="SelectDBTradeLogInfo">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/SelectDBTradeLogInfo" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBTradeLogInfoList">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBTradeLogInfoList" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBTotal">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBTotal" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBRecharge">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBRecharge" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBEnchash">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBEnchash" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBEnchash">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBEnchash" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBEarn">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBEarn" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetDBConsume">
+      <soap:operation
+        soapAction="http://pay.dbowner.com/DBOwnerPay/GetDBConsume" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SOAPAuth" part="Auth"
+          use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+
+  </wsdl:binding>
+
+  <wsdl:service name="DBOwnerPay">
+    <wsdl:port binding="tns:DBOwnerPaySOAP" name="DBOwnerPaySOAP">
+      <soap:address location="http://pay.dbowner.com/soap/paySoap?wsdl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,13 @@
+2013-04-19 14:35:55 | 127.0.0.1 | /index.php/developer/-page-2.html |-page操作方法在developer模块中不存在
+2013-04-19 14:36:08 | 127.0.0.1 | /index.php/developer/-page-2.html |-page操作方法在developer模块中不存在
+2013-04-19 14:36:14 | 127.0.0.1 | /index.php/developer/-page-2.html |-page操作方法在developer模块中不存在
+2013-04-19 14:39:06 | 127.0.0.1 | /index.php/developer/-page-2.html |-page操作方法在developer模块中不存在
+2013-04-19 14:39:19 | 127.0.0.1 | /index.php/developer/-page-2.html |-page操作方法在developer模块中不存在
+2013-04-19 15:06:47 | 127.0.0.1 | /index.php/developer/delAppRecord |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbAppInfo` SET `Status`='1'  WHERE  `AppID`='3' <br>
+						<b>错误详情</b>: Unknown column 'AppID' in 'where clause'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-19 15:48:31 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT count(*) FROM `tbAppInfo`  WHERE Status != 1 and aName = %'db'%<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'db'%' at line 1<br>
+						<b>错误代码</b>:1064<br>

@@ -1,0 +1,90 @@
+2013-08-13 11:07:19 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-13 11:07:19 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-13 11:08:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-13 11:08:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-13 11:08:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-13 11:20:46 | 110.75.145.1 | /index.php/callback/notify |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbDBTradeLogInfo` SET `Status`='2',`dPayState`='TRANSFER_AMOUNT_NOT_ENOUGH',`dPaySerialCode`='20130813331190468',`UpdateTime`='1376364046'  WHERE  `dSerialCode`='20130516125250968536000042080817' <br>
+						<b>错误详情</b>: Unknown column 'dPayState' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-08-13 11:24:13 | 110.75.141.1 | /index.php/callback/notify |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbDBTradeLogInfo` SET `Status`='2',`dPayState`='TRANSFER_AMOUNT_NOT_ENOUGH',`dPaySerialCode`='20130813331190468',`UpdateTime`='1376364253'  WHERE  `dSerialCode`='20130516125250968536000042080817' <br>
+						<b>错误详情</b>: Unknown column 'dPayState' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-08-13 11:28:20 | 119.147.146.118 | /index.php/assets/account-/rg2by+yhk4= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID 
+where  a.UserID in (  ) and b.Status != 1  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 11:39:44 | 119.147.146.118 | /index.php/throwmessage/throwmsg-tqi6o+gpdq8bbtmrpogozmsfsvu9lygertyp8fncby4=-gnvhhcotmy181ramb15mtg==-l/qwofvmast6pri6p9c6tdoi7hlwiohnrtyp8fncby4= |throwmessage模块不存在
+2013-08-13 11:45:09 | 192.168.0.1 | /index.php/assets/account-/rg2By+yHK4= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID 
+where  a.UserID in ( 1 ) and b.Status != 1 and b.dTypt = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: Unknown column 'b.dTypt' in 'where clause'<br>
+						<b>错误代码</b>:1054<br>
+2013-08-13 13:37:53 | 110.75.141.191 | /index.php/robots.txt |robots.txt模块不存在
+2013-08-13 14:28:58 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-13 15:16:53 | 192.168.0.1 | /index.php/trade/wait |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT count(*) FROM `tbDBTradeLogInfo`  WHERE   UserID = '1' and dType in '2'<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2'' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:28:18 | 192.168.0.1 | /index.php/assets/account-/ |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:28:18 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-13 17:40:05 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:40:14 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:41:34 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:41:55 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:42:06 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:42:25 | 192.168.0.1 | /index.php/assets/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:43:37 | 192.168.0.1 | /index.php/callback/account-/cGS6/uUOmFk= |account操作方法在callback模块中不存在
+2013-08-13 17:44:01 | 192.168.0.1 | /index.php/callback/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:45:51 | 192.168.0.1 | /index.php/callback/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:45:54 | 192.168.0.1 | /index.php/callback/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 17:45:59 | 192.168.0.1 | /index.php/callback/account-/cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select  a.UserID,a.aType,a.aUserName,a.aAccountNumber,b.dSerialCode,b.CoinDB  from tbAccountBaseInfo as a left join tbDBTradeLogInfo as b on a.UserID = b.UserID
+			where  b.AutoID in (  ) and b.Status != 1 and b.dType = 2  order by b.AppendTime asc<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and b.Status != 1 and b.dType = 2  order by b.AppendTime asc' at line 2<br>
+						<b>错误代码</b>:1064<br>
+2013-08-13 19:17:00 | 220.181.158.109 | /index.php/product-xxx-<script language="php">echo "webscantest" |product-xxx-%3Cscript%20language=%22php%22%3Eecho%20%22webscantest%22模块不存在
+2013-08-13 19:19:13 | 220.181.158.109 | /index.php/home/cache/front_tmpl/xxx.php |home模块不存在
+2013-08-13 19:23:23 | 220.181.158.109 | /index.php/user.php |user.php模块不存在

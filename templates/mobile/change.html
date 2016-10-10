@@ -1,0 +1,40 @@
+{include file='header_wap.html'}
+ 
+<script type="text/javascript" language="javascript" src="{$__PUBLIC__}/js/DB.mochange.js" ></script>
+
+<div class="ct_exp" style="display:none;">{$Lang.YourIntegralBalance}：<span class="c_y" id="change_db">{$account.db}</span>{$Lang.IntegralBalanceUnion}</div>
+<ul class="ct_box m_t_20">
+	<li style="display:none;">
+		<div class="ct_title">{$Lang.YourAccountBalance}：</div>
+		<div class="ct_cont"><span class="c_y" id="change_money">{$account.money}</span>{$Lang.AccountBalanceUnion}</div>
+	</li>
+	<li class="ct_line_bd">
+		<div class="ct_title">{$Lang.YourIntegralBalance}：</div>
+		<div class="ct_cont"><span class="c_y" id="change_db">{$account.db}</span>{$Lang.IntegralBalanceUnion}</div>
+	</li>
+	<li>
+		<div class="ct_title">{$Lang.ChangeMoneyNum}：</div>
+		<div class="ct_cont"><input type="text" class="input" name="coin" size="14" value="{$account.coin_num}" {if $account.coin_num}readonly{/if} />{$Lang.AccountBalanceUnion}</div>
+	</li>
+	<li>
+		<div class="ct_title">{$Lang.ChangeDBNumber}：</div>
+		<div class="ct_cont"><input type="text" class="input" name="db" size="14" value="{$account.db_num}" {if $account.db_num}readonly{/if} />{$Lang.IntegralBalanceUnion}</div>
+	</li>
+</ul>
+	
+<div class="ct_exp">{$Lang.ChoosePayWay}</div>	
+<ul class="ct_box ct_ti" id="payway">
+	<li class="ct_line_bd" vtype="alipay">
+		{$Lang.WayAlipay}<span class="ct_go">></span>
+	</li>
+	<li vtype="paypal">
+		{$Lang.WayPaypal}<span class="ct_go">></span>
+	</li>
+</ul>
+
+<script type="text/javascript">
+var JS_LANG = {$JS_LANG};
+var jsonData = {$jsonData};
+</script>
+
+{include file='footer_wap.html'}

@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^((?!sdk).*)$ index.php/$1 [L]
+
+#RewriteCond   %{HTTP_HOST}  ^open.dbowner.com$
+#RewriteRule   ^(.*)$         http://user.dbowner.com/$1 [L]
+
+</IfModule>

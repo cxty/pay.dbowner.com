@@ -1,0 +1,7 @@
+2013-08-14 09:29:40 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-14 09:29:40 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-14 09:30:00 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-14 09:30:00 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-14 10:33:13 | 110.75.141.191 | /index.php/robots.txt |robots.txt模块不存在
+2013-08-14 13:20:38 | 220.181.158.109 | /index.php/product-xxx-<script language="php">echo "webscantest" |product-xxx-%3Cscript%20language=%22php%22%3Eecho%20%22webscantest%22模块不存在
+2013-08-14 13:22:56 | 220.181.158.109 | /index.php/home/cache/front_tmpl/xxx.php |home模块不存在

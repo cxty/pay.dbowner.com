@@ -1,0 +1,10 @@
+2013-08-16 01:55:40 | 110.75.141.191 | /index.php/robots.txt |robots.txt模块不存在
+2013-08-16 11:54:18 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-16 11:55:58 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-16 11:56:24 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-16 11:56:24 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-16 12:03:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-16 12:03:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-16 12:03:30 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-16 13:32:46 | 220.181.158.109 | /index.php/product-xxx-<script language="php">echo "webscancfreer";-_set_compile.html |product-xxx-%3Cscript%20language=%22php%22%3Eecho%20%22webscancfreer%22;-_set_compile模块不存在
+2013-08-16 13:35:13 | 220.181.158.109 | /index.php/home/cache/front_tmpl/xxx.php |home模块不存在

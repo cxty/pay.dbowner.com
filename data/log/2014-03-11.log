@@ -1,0 +1,6 @@
+2014-03-11 16:40:10 | 220.181.158.109 | /index.php/news.php |news.php模块不存在
+2014-03-11 16:41:41 | 220.181.158.109 | /index.php/ajax.php |ajax.php模块不存在
+2014-03-11 16:43:12 | 220.181.158.109 | /index.php/comments.php |comments.php模块不存在
+2014-03-11 16:43:12 | 220.181.158.109 | /index.php/admin/index.php |ex.php模块不存在
+2014-03-11 16:43:12 | 220.181.158.109 | /index.php/case/ |case模块不存在
+2014-03-11 16:44:50 | 220.181.158.109 | /index.php/Index/index/name/${@phpinfo()} |Index模块不存在

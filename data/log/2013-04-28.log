@@ -1,0 +1,37 @@
+2013-04-28 10:22:50 | 127.0.0.1 | /index.php/advertiser/addAdsSub |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: INSERT INTO `tbAdsDetInfo`  (`AdsID`,`adsKeyword`,`adsSex`,`adsAge`,`aState`,`Status`,`AppendTime`,`UpdateTime`) VALUES ('7',',2,10,','2','','','0','1367115770','1367115770') <br>
+						<b>错误详情</b>: Unknown column 'aState' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-28 10:24:14 | 127.0.0.1 | /index.php/advertiser/addAdsSub |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: INSERT INTO `tbAdsDetInfo`  (`AdsID`,`adsKeyword`,`adsSex`,`adsAge`,`aState`,`Status`,`AppendTime`,`UpdateTime`) VALUES ('8',',2,10,','2','','','0','1367115854','1367115854') <br>
+						<b>错误详情</b>: Unknown column 'aState' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-28 10:33:06 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:37:51 | 127.0.0.1 | /index.php/advertiser/manage-update-N++ztnf2Mk9a/y1gzq1Omg== |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.adsName,a.adsClass,a.adsType,a.adsShow,a.adsForm,a.adsContent,a.adsAction,a.adsUrl,a.adsPayForm,a.adsPayDBb.adsKeyword,b.adsSex,b.adsAge,b.adsState from tbAdvertInfo as a left join tbAdsDetInfo as b on a.AutoID = b.AdsID where a.AutoID = '8'<br>
+						<b>错误详情</b>: Unknown column 'a.adsPayDBb.adsKeyword' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-28 10:38:11 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:40:10 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:41:35 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:42:40 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:44:04 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:46:30 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:46:50 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:48:00 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:48:23 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:48:57 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:49:12 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:49:26 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:49:43 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 10:49:54 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:01:59 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:02:06 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:02:18 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:02:29 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:03:07 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:03:57 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:04:10 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:05:20 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:06:59 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在
+2013-04-28 11:07:14 | 127.0.0.1 | /index.php/advertiser/public/images/phone_icon_1.png |publicimagesphone_icon_1.png操作方法在advertiser模块中不存在

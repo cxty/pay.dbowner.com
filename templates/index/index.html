@@ -1,0 +1,145 @@
+{include file='header.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.authAccount.js" ></script>
+
+<div class="index_box">
+	<div class="id_up_box">
+		<div class="id_up_left">
+			<div class="id_u_l_up">
+				<img src="{$ckInfo.ico}" />
+				<div class="id_up_left_title word">
+					<span class="font_20">{$greetings}</span>&nbsp;&nbsp;
+					{$ckInfo.uName}
+				</div>
+			</div>
+			<div class="id_u_l_down">
+				<div class="id_u_l_d_exp r_n"><a href="{$platform_auth}/main/index-u_safe">{if $auth.realName == 1}{$Lang.CheckRealName}{else}{$Lang.NotCheckRealName}{/if}</a></div>
+				<div class="id_u_l_d_exp c_m"><a href="{$platform_auth}/main/index-u_safe">{if $auth.safeEmail}{$auth.safeEmail}{else}{$Lang.CheckMail}{/if}</a></div>
+				<div class="id_u_l_d_exp c_p" style="display:none;"><a href="{$platform_auth}/main/index-u_safe">{if $auth.safePhone}{$auth.safePhone}{else}{$Lang.CheckPhone}{/if}</a></div>
+				<div class="id_u_l_d_exp c_p"><a href="javascript:alert('{$Lang.AuthPhoneNotSupport}')">{if $auth.safePhone}{$auth.safePhone}{else}{$Lang.CheckPhone}{/if}</a></div>
+			</div>
+		</div>
+		<div class="v_line_200_l"></div>
+		<div class="id_up_right">
+			<div class="id_mi_title">{$Lang.IntegralBalance}</div>
+			<div class="id_mi_balance">{$account.db}</div>
+			<div class="id_mi_btn">
+				<a class="btn_b" href="/assets/change">{$Lang.DBChange}</a>
+				<a class="btnb_b mg_left_30" href="/assets/discounting">{$Lang.DBDiscounting}</a>
+			</div>
+		</div>
+	</div>
+	<div class="id_middle_box">
+		<div class="id_m_show">
+			<div class="id_m_s_cont">{$Lang.ServerType}：{$Lang.HighVisitInterface}</div>
+			<div class="id_m_s_cont">{$Lang.FeeStandard}：{$jData.fee}{$Lang.IntegralBalanceUnion}</div>
+			<div class="id_m_s_btn"><a class="btn_b" href="/assets/change-interface">{$Lang.Buy}</a></div>
+		</div>
+		<div class="v_line_150_l"></div>
+		<div class="id_m_show">
+			<div class="id_m_s_cont">{$Lang.ServerType}：{$Lang.AdvertiseFee}</div>
+			<div class="id_m_s_cont">{$Lang.FeeStandard}：{$jData.fee}{$Lang.IntegralBalanceUnion}</div>
+			<div class="id_m_s_btn"><a class="btn_b" href="/assets/change-ads">{$Lang.Buy}</a></div>
+		</div>
+		<div class="v_line_150_l"></div>
+		<div class="id_m_show">
+			<div class="id_m_s_cont">{$Lang.ServerType}：{$Lang.PushFee}</div>
+			<div class="id_m_s_cont">{$Lang.FeeStandard}：{$jData.fee}{$Lang.IntegralBalanceUnion}</div>
+			<div class="id_m_s_btn"><a class="btn_b" href="/assets/change-push">{$Lang.Buy}</a></div>
+		</div>
+	</div>
+	<div class="id_down_box">
+		<div class="id_td_left">
+			<div class="id_td_title_box">
+				<div class="id_td_title">{$Lang.CommonProblem}</div>
+				<ul class="id_td_ul">
+					<li><a class="cb" href="/trade/db"></a></li>
+				</ul>
+			</div>
+			{if $qlist}
+				<ul class="id_ul_list_row" >
+				{foreach item=item key=key from=$qlist}
+					<li class="l_w_300 t_i_8"><a href="{$item.href}" target="_blank">{$item.title}</a></li>			
+				{/foreach}
+				</ul>
+			{/if}
+		</div>
+		<div class="id_td_right">
+			<div class="id_td_title_box">
+				<div class="id_td_title">{$Lang.RecentDBTrade}</div>
+				<ul class="id_td_ul">
+					<li><a class="cb" href="/trade/db">{$Lang.DetailTradeDB}</a></li>
+				</ul>
+			</div>
+			{if $listCoin}
+				{foreach item=item key=key from=$listCoin}
+					<ul class="id_ul_tb_row {if $key is odd}id_ul_tb_select{/if}" >	
+						<li class="l_w_130 t_i_8">{$item.AppendTime|date_format:"%Y-%m-%d %H:%M"}</li>	
+						<li class="l_w_400">{$item.dState}</li>
+						<li class="l_w_80"><span class="{if $item.dType == 1 || $item.dType == 3}c_y{else}c_b{/if}">{if $item.dType == 2 || $item.dType == 4}-{/if}{$item.CoinDB}</span></li>
+					</ul>
+				{/foreach}
+			{/if}
+		</div>
+	</div>
+</div>
+
+<div class="index_box" style="display:none;">
+	<div class="id_left_box">
+		<div class="id_l_up_box">
+			<div class="id_up_left_up">
+				<img src="{$ckInfo.ico}" />
+				<div class="id_up_left_title word"><span class="font_30">{$greetings}</span>&nbsp;&nbsp;{$ckInfo.uName}</div>
+				<div class="id_up_left_exp r_n"><a href="{$platform_auth}/main/index-u_safe">{if $auth.realName == 1}{$Lang.CheckRealName}{else}{$Lang.NotCheckRealName}{/if}</a></div>
+			</div>
+			<div class="id_up_left_down">			
+				
+			</div>
+		</div>
+		<div class="v_line_400_l"></div>
+		<div class="id_l_down_box">
+			<div class="id_mi_title">{$Lang.IntegralBalance}</div>
+			<div class="id_mi_balance">{$account.db}</div>
+			<div class="id_mi_btn">
+				<a class="btn_b" href="/assets/change">{$Lang.DBChange}</a>
+				<a class="btnb_b mg_left_30" href="/assets/discounting">{$Lang.DBDiscounting}</a>
+			</div>
+		</div>
+	</div>
+	<div class="id_right_box">
+		<div class="id_td_right">
+			<div class="id_td_title_box">
+				<div class="id_td_title">{$Lang.RecentDBTrade}</div>
+				<ul class="id_td_ul">
+					<li><a class="cb" href="/trade/db">{$Lang.DetailTradeDB}</a></li>
+				</ul>
+			</div>
+			{if $listCoin}
+				{foreach item=item key=key from=$listCoin}
+					<ul class="id_ul_tb_row {if $key is odd}id_ul_tb_select{/if}" >	
+						<li class="l_w_130 t_i_8">{$item.AppendTime|date_format:"%Y-%m-%d %H:%M"}</li>	
+						<li class="l_w_300">{$item.dState}</li>
+						<li class="l_w_80"><span class="{if $item.dType == 1 || $item.dType == 3}c_y{else}c_b{/if}">{if $item.dType == 2 || $item.dType == 4}-{/if}{$item.CoinDB}</span></li>
+					</ul>
+				{/foreach}
+			{/if}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var authAccount = new TauthAccount();
+authAccount.JS_LANG = {$JS_LANG};
+//页面完全再入后初始化
+$(document).ready(function(){
+	authAccount.init();
+});
+//释放
+$(window).unload(function(){
+	authAccount = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

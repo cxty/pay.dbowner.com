@@ -1,0 +1,25 @@
+2013-05-06 11:12:27 | 127.0.0.1 | /index.php/developer/addAppSub |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: INSERT INTO `tbAppInfoLog`  (`AppID`,`user_id`,`aName`,`client_id`,`aDevice`,`aType`,`aUrl`,`aGps`,`aFreshTime`,`aAnimation`,`adsPercent`,`aCode`,`Status`,`AppendTime`,`UpdateTime`) VALUES ('6','aVB2bXpudC9yOWs9','aaa','','1','1,','http://auth.dbowner.com','1','1','1','[{"typeID":"1","prior":"","percent":"40"},{"typeID":"2","prior":"","percent":""},{"typeID":"3","prior":"","percent":"60"}]','aead092c184ec293','2','1367809947','1367809947') <br>
+						<b>错误详情</b>: Unknown column 'adsPercent' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-05-06 11:13:06 | 127.0.0.1 | /index.php/developer/addAppSub |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: INSERT INTO `tbAppInfoLog`  (`AppID`,`user_id`,`aName`,`client_id`,`aDevice`,`aType`,`aUrl`,`aGps`,`aFreshTime`,`aAnimation`,`adsPercent`,`aCode`,`Status`,`AppendTime`,`UpdateTime`) VALUES ('6','aVB2bXpudC9yOWs9','aaa','','1','1,','http://auth.dbowner.com','1','1','1','[{\"typeID\":\"1\",\"prior\":\"\",\"percent\":\"40\"},{\"typeID\":\"2\",\"prior\":\"\",\"percent\":\"\"},{\"typeID\":\"3\",\"prior\":\"\",\"percent\":\"60\"}]','b92bcdb808c79b0e','2','1367809986','1367809986') <br>
+						<b>错误详情</b>: Unknown column 'adsPercent' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-05-06 14:17:11 | 127.0.0.1 | /index.php/developer |index操作方法在developer模块中不存在
+2013-05-06 14:26:26 | 127.0.0.1 | /index.php/statis |index操作方法在statis模块中不存在
+2013-05-06 14:26:37 | 127.0.0.1 | /index.php/statis |index操作方法在statis模块中不存在
+2013-05-06 17:16:46 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:18:00 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:18:19 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:18:36 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:19:38 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:22:54 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:23:14 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:23:40 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:24:04 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:42:27 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:43:20 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:43:54 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:43:56 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在
+2013-05-06 17:44:07 | 127.0.0.1 | /index.php/public/js/DB.headerJs.js |public模块不存在

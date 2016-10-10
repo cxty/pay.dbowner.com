@@ -1,0 +1,18 @@
+2013-04-16 14:15:51 | 127.0.0.1 | /index.php/code |code模块不存在
+2013-04-16 14:16:01 | 127.0.0.1 | /index.php/code |code模块不存在
+2013-04-16 14:37:30 | 127.0.0.1 | /index.php/developer/addBase |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbUserInfo` SET `uType`='3',`uCellphone`='13774564508',`uNumType`='1',`uNumber`='379182261'  WHERE  `UserID`='<select name="UserID" id="city"></select>' <br>
+						<b>错误详情</b>: Unknown column 'UserID' in 'where clause'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-16 15:00:03 | 127.0.0.1 | /index.php/developer/index-base |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.uCellphone,a.uNumType,a.uNumber,b.dState,b.dProvice,b.dCity,b.dCompany,b.dAddr from tbUserInfo as a left join tbUserDetInfo as b on a.AutoID = b.UserID a.UserID = 1<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'a.UserID = 1' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-16 15:00:22 | 127.0.0.1 | /index.php/developer/index-base |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.uCellphone,a.uNumType,a.uNumber,b.dState,b.dProvice,b.dCity,b.dCompany,b.dAddr from tbUserInfo as a left join tbUserDetInfo as b on a.AutoID = b.UserID  where a.UserID = 1<br>
+						<b>错误详情</b>: Unknown column 'a.UserID' in 'where clause'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-16 15:27:19 | 127.0.0.1 | /index.php/developer/index-base |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.uType,a.uCellphone,a.uNumType,a.uNumber,b.dState,b.dProvice,b.dCity,b.dCompany,b.dAddr from tbUserInfo as a left join tbUserDetInfo as b on a.AutoID = b.UserID  where a.AutoID = <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<br>
+						<b>错误代码</b>:1064<br>

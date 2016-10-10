@@ -1,0 +1,44 @@
+2013-04-18 11:18:02 | 127.0.0.1 | /index.php/developer/getDelKeywordVal |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT kName FROM `tbAppKeyWordInfo`  WHERE AutoID in (1,3,)<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 15:20:57 | 127.0.0.1 | /index.php/developer/checkAppName |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT AutoID FROM `tbAppInfo`  WHERE  `aName`='' <br>
+						<b>错误详情</b>: Table 'dbowner_ads_db.tbappinfo' doesn't exist<br>
+						<b>错误代码</b>:1146<br>
+2013-04-18 15:57:10 | 127.0.0.1 | /index.php/developer/addAppSub |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: INSERT INTO `tbAppInfo`  (`aName`,`client_id`,`aDevice`,`aType`,`aUrl`,`aGps`,`aFreshTime`,`aAnimation`,`aCode`,`Status`,`AppendTime`,`UpdateTime`) VALUES ('DB','','3',',1,','http://user.dbowner.com','1','1','1','41cfdbf8971db22a','0','1366271830','1366271830') <br>
+						<b>错误详情</b>: Unknown column 'aCode' in 'field list'<br>
+						<b>错误代码</b>:1054<br>
+2013-04-18 16:49:24 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status != 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:49:51 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status != 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:49:52 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status != 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:49:53 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status != 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:50:05 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status <> 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<> 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:50:06 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status <> 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<> 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:50:39 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status != 1 order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!= 1 order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-04-18 16:53:34 | 127.0.0.1 | /index.php/developer/manage-list |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select AutoID,aName,aDevice,Status from tbAppInfo Status in (0,2) order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in (0,2) order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>

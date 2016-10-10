@@ -1,0 +1,26 @@
+2013-05-03 10:29:53 | 127.0.0.1 | /index.php/wall/manage |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.AutoID,a.Status,a.UpdateTimeb.adsName as wallName from tbWallInfo as a left join tbAdvertInfo as b on a.wallName = b.AutoID where a.Status != 1 and a.user_id = 'aVB2bXpudC9yOWs9' and a.wallType = '' order by  limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-05-03 10:30:22 | 127.0.0.1 | /index.php/wall/manage |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.AutoID,a.Status,a.UpdateTime,b.adsName as wallName from tbWallInfo as a left join tbAdvertInfo as b on a.wallName = b.AutoID where a.Status != 1 and a.user_id = 'aVB2bXpudC9yOWs9' and a.wallType = '' order by  limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-05-03 10:30:24 | 127.0.0.1 | /index.php/wall/manage |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.AutoID,a.Status,a.UpdateTime,b.adsName as wallName from tbWallInfo as a left join tbAdvertInfo as b on a.wallName = b.AutoID where a.Status != 1 and a.user_id = 'aVB2bXpudC9yOWs9' and a.wallType = '' order by  limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-05-03 11:38:09 | 127.0.0.1 | /index.php/wall/checkWallRecord |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: SELECT AutoID FROM `tbWallInfo`  WHERE wallType = '2' and wallName = '4' and AutoID == '4'<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== '4'' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-05-03 13:59:29 | 127.0.0.1 | /index.php/wall/statis-GNvhhCoTmY181RaMb15mtg== |statis操作方法在wall模块中不存在
+2013-05-03 14:33:59 | 127.0.0.1 | /index.php/wall/manage-list-ads |wall模块不存在
+2013-05-03 15:36:02 | 127.0.0.1 | /index.php/wall/manage-list-ads |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.AutoID,a.Status,a.UpdateTime,a.wallPayForm,b.adsName as wallName from tbWallInfo as a left join tbAdvertInfo as b on a.wallName = b.AutoID where a.Status != 1 and a.user_id = 'aVB2bXpudC9yOWs9' and a.wallType = '2' and b.adsName like '%2'% order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by UpdateTime desc limit 0,10' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-05-03 15:40:36 | 127.0.0.1 | /index.php/wall/manage-list-ads |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select count(a.AutoID) from tbWallInfo as a left join tbAdvertInfo as b on a.wallName = b.AutoID where a.Status != 1 and a.user_id = 'aVB2bXpudC9yOWs9' and a.wallType = '2' and b.adsName like '%图文%' order by UpdateTime desc limit 0,10<br>
+						<b>错误详情</b>: Column 'UpdateTime' in order clause is ambiguous<br>
+						<b>错误代码</b>:1052<br>

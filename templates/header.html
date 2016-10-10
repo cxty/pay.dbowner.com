@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$title}</title>
+{include file='link.html'}
+
+</head>
+<script language="javascript" type="text/javascript">
+var Common = new TCommon();
+//页面完全再入后初始化
+$(document).ready(function(){
+	Common.init();
+});
+//释放
+$(window).unload(function(){
+	Common = null;
+});
+var nav = new Tnav();
+nav.JS_LANG = {$JS_LANG};
+nav.navData = {$navData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	nav.init();
+});
+//释放
+$(window).unload(function(){
+	nav = null;
+});
+</script>
+<body>
+<div class="header">
+	<div id="top" >
+		<div class="top_box">
+			<div class="top_left">		
+			</div>
+			<div class="top_right">
+				{if $ckInfo.uName}					
+					<div id="login_info">
+						<div id="login_name">{$ckInfo.uName}</div>
+						<div id="loginOut" style="display:none">
+							<div class="login_left"><img src="{$ckInfo.ico}" /></div>
+							<ul>
+								<li><a href="/">{$Lang.HBackIndex}</a></li>
+								<li><a href="{$ckInfo.account}" target="_black">{$Lang.PensonalPage}</a></li>								
+								<li><a href="javascript:nav.loginOut()">{$Lang.LoginOut}</a></li>
+							</ul>
+						</div>
+					</div>
+				{else}
+					<div class="top_login"><a href="{$loginUrl}">{$Lang.Login}</a></div>
+				{/if}		
+				<div class="top_login"><span id="lang_box"></span></div>		
+			</div>	
+		</div>		
+	</div>
+	<div id="logo">
+		<div class="logo_box">
+			<div class="logo_box_href">
+				<a href="/"><img src="{$__PUBLIC__}/images/pay_ico.png" /></a>
+			</div>
+		</div>	
+	</div>
+	<div id="top_nav">
+		<div id="nav_box" class="nav_box" >
+			{if $hnav}
+				{foreach item=item key=key from=$hnav}
+					<div class="nav_row {if $item.ename != 'index'}mg_left_10{/if}">{$item.name}</div>
+				{/foreach}
+			{/if}
+		</div>
+	</div>
+</div>
+<div class="containers_box">

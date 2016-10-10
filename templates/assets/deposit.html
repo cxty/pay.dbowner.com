@@ -1,0 +1,51 @@
+{include file='header.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.deposit.js"></script>
+
+<div class="containers_box_construct">
+	<div class="changedb_box">
+		<ul class="chagedb_ul">
+			<li>
+				<div class="ch_ul_title">{$Lang.YourAccountBalance}：</div>
+				<span class="c_y" id="change_money">{$account.money}</span>{$Lang.AccountBalanceUnion}
+			</li>
+			<li>
+				<div class="ch_ul_title">{$Lang.ChangeMoneyNum}：</div>
+				<input type="text" class="input" name="coin" size="8" />{$Lang.AccountBalanceUnion}
+			</li>
+			<li>
+				<div class="changedb_btn">
+					<div class="changedb_payicon">
+						<input type="radio" name="paytype" id="alipay_icon" value="alipay" checked />
+						<label for="alipay_icon" class="alipay_icon b_r">&nbsp;</label>
+					</div>
+					<div class="changedb_payicon c_p_l">
+						<input type="radio" name="paytype" id="paypal_icon" value="paypal" />
+						<label for="paypal_icon" class="paypal_icon">&nbsp;</label>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="changedb_btn"><a id="sub_btn" class="btn" href="javascript:void(0);">{$Lang.Recharge}</a></div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var deposit = new Tdeposit();
+deposit.JS_LANG = {$JS_LANG};
+deposit.jsonData = {$jsonData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	deposit.init();
+});
+//释放
+$(window).unload(function(){
+	deposit = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

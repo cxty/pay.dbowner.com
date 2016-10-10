@@ -1,0 +1,18 @@
+2013-06-19 15:53:31 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-06-19 15:53:31 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-06-19 15:56:09 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-06-19 15:56:09 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-06-19 15:56:09 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-06-19 17:32:47 | 192.168.0.1 | /index.php/soap/paySoap |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.user_id,a.uName,ifnull(b.Assets,0) as Assets,ifnull(c.CoinDB,0) as CoinDB,a.Status,a.AppendTime,a.UpdateTime from tbUserInfo as a left join tbAssetsTradeInfo as b on a.AutoID = b.UserID  left join tbDBTradeInfo as c on a.AutoID = c.UserID  where <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-06-19 17:32:49 | 192.168.0.1 | /index.php/soap/paySoap |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.user_id,a.uName,ifnull(b.Assets,0) as Assets,ifnull(c.CoinDB,0) as CoinDB,a.Status,a.AppendTime,a.UpdateTime from tbUserInfo as a left join tbAssetsTradeInfo as b on a.AutoID = b.UserID  left join tbDBTradeInfo as c on a.AutoID = c.UserID  where <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-06-19 17:32:49 | 192.168.0.1 | /index.php/soap/paySoap |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: select a.user_id,a.uName,ifnull(b.Assets,0) as Assets,ifnull(c.CoinDB,0) as CoinDB,a.Status,a.AppendTime,a.UpdateTime from tbUserInfo as a left join tbAssetsTradeInfo as b on a.AutoID = b.UserID  left join tbDBTradeInfo as c on a.AutoID = c.UserID  where <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-06-19 18:51:12 | 220.181.158.109 | /index.php/plus/download.php |plus模块不存在

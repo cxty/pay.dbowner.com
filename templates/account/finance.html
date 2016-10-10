@@ -1,0 +1,98 @@
+{include file='header.html'}
+
+{include file='datepicker.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.navinit.js"></script>
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.accountFinance.js"></script>
+
+<div class="trade_box">
+	{include file="account/nav.html"}
+	<div class="trade_right">
+		<div class="trade_content">
+			<div class="trade_cont_title">{$Lang.DetailAccountFinance}</div>
+			<form id="myform" method="post" action="/account/add">
+				<input type="hidden" name="AutoID" value="{$listInfo.AutoID}" />
+				<div class="account_cont_box">
+					<div class="account_cont_row rmd_msg">{$Lang.AccountState}</div>					
+					<span id="show_msg">
+						<div class="account_cont_row md_btn"><a id="modify" href="javascript:void(0);">{if $listInfo}{$Lang.Modify}{else}{$Lang.Add}{/if}</a></div>
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.PayType}：</div>
+							<div class="account_c_r_cont">
+								<div class="changedb_payicon">
+									<label for="alipay_icon" class="alipay_icon b_r">&nbsp;</label>
+								</div>
+							</div>
+						</div>
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.AccountName}：</div>
+							<div class="account_c_r_cont">{$listInfo.aUserName}</div>
+						</div>
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.AccountNum}：</div>
+							<div class="account_c_r_cont">{$listInfo.aAccountNumber}</div>
+						</div>
+					</span>
+					<span id="modify_msg">
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.PayType}：</div>
+							<div class="account_c_r_cont">
+								<div class="changedb_payicon">
+									<input type="radio" name="aType" id="alipay_icon" value="1" checked />
+									<label for="alipay_icon" class="alipay_icon b_r">&nbsp;</label>
+								</div>
+							</div>
+						</div>
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.AccountName}：</div>
+							<div class="account_c_r_cont">
+								<input type="text" name="aUserName" value="{$listInfo.aUserName}" />
+							</div>
+						</div>
+						<div class="account_cont_row">
+							<div class="account_c_r_title">{$Lang.AccountNum}：</div>
+							<div class="account_c_r_cont">
+								<input type="text" name="aAccountNumber" value="{$listInfo.aAccountNumber}" />
+							</div>
+						</div>
+						<div class="account_cont_row">
+							<div class="accountdb_btn">
+								<a id="sub_btn" class="btn_small" href="javascript:void(0);">{$Lang.ConfirmSubmit}</a>
+							</div>
+						</div>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var navinit = new Tnavinit();
+navinit.JS_LANG = {$JS_LANG};
+navinit.jsonData = {$jsonData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	navinit.init();
+});
+//释放
+$(window).unload(function(){
+	navinit = null;
+});
+
+var accountFinance = new TaccountFinance();
+accountFinance.JS_LANG = {$JS_LANG};
+accountFinance.jsonData = {$jsonData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	accountFinance.init();
+});
+//释放
+$(window).unload(function(){
+	accountFinance = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

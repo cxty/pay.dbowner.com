@@ -1,0 +1,8 @@
+2013-05-30 18:23:45 | 220.181.158.109 | /index.php/api.php |api.php模块不存在
+2013-05-30 20:55:01 | 220.181.158.109 | /index.php/utf8/api/uc_client/control/mail.php |utf8模块不存在
+2013-05-30 20:56:01 | 220.181.158.109 | /index.php/subscribe.php |subscribe.php模块不存在
+2013-05-30 20:58:03 | 220.181.158.109 | /index.php/plug/vote/vote_setting.asp |plug模块不存在
+2013-05-30 20:59:02 | 220.181.158.109 | /index.php/data/ |data模块不存在
+2013-05-30 20:59:59 | 220.181.158.109 | /index.php/manage/Config/BackupRestore.aspx |manage模块不存在
+2013-05-30 21:00:30 | 220.181.158.109 | /index.php/phpinfo.php |phpinfo.php模块不存在
+2013-05-30 21:00:45 | 220.181.158.109 | /index.php/info.php |info.php模块不存在

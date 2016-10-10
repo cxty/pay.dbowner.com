@@ -1,0 +1,60 @@
+{include file='header.html'}
+
+{include file='datepicker.html'}
+
+<script type="text/javascript" src="{$__PUBLIC__}/js/DB.navinit.js"></script>
+
+<div class="trade_box">
+	{include file="trade/nav.html"}
+	<div class="trade_right">
+		<div class="trade_content">
+			<div class="trade_cont_title">{$Lang.DetailTradeCash}</div>
+			<form id="myform" method="post" action="/trade/cash">
+			<div class="trade_cont_search">
+				{$Lang.StartTime}：<input type="text" name="startTime" id="startTime" value="{$smarty.post.startTime}" size="10"/>&nbsp;&nbsp;
+				{$Lang.EndTime}：<input type="text" name="endTime" id="endTime" size="10" value="{$smarty.post.endTime}" />&nbsp;&nbsp;
+				{$Lang.TradeType}：{$Lang.TradeIncome}<input type="radio" name="tradeType" value="1" {if $smarty.post.tradeType == 1}checked{/if} />
+							       {$Lang.TradePay}<input type="radio" name="tradeType" value="2" {if $smarty.post.tradeType == 2}checked{/if} />&nbsp;&nbsp;
+				<a id="sub_btn" class="btn_small" href="javascript:void(0);">{$Lang.Search}</a>
+			</div>
+			</form>
+			<ul class="trade_cont_header_ul">
+				<li class="l_w_250 t_i_8">{$Lang.SerialCode}</li>
+				<li class="l_w_220">{$Lang.State}</li>
+				<li class="l_w_100 t_i_8">{$Lang.Amount}</li>
+				<li class="l_w_130">{$Lang.Time}</li>
+			</ul>
+			{if $listInfo}
+				{foreach item=item key=key from=$listInfo}
+					<ul class="trade_cont_ul {if $key is odd}id_ul_tb_select{/if}">
+						<li class="l_w_250 t_i_8">{$item.cSerialCode}</li>
+						<li class="l_w_220">{$item.cState}</li>
+						<li class="l_w_100 t_i_8">			
+							<span class="{if $item.cType == 1 || $item.cType == 3}c_y{else}c_b{/if}">{if $item.cType == 2 || $item.cType == 4}-{/if}{$item.Assets}</span>
+						</li>
+						<li class="l_w_130">{$item.AppendTime|date_format:"%Y-%m-%d %H:%M"}</li>
+					</ul>
+				{/foreach}
+			{/if}
+			<div class="showpage">{$showpage}</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var navinit = new Tnavinit();
+navinit.JS_LANG = {$JS_LANG};
+navinit.jsonData = {$jsonData};
+//页面完全再入后初始化
+$(document).ready(function(){
+	navinit.init();
+});
+//释放
+$(window).unload(function(){
+	navinit = null;
+});
+//-->
+</script>
+
+{include file='footer.html'}

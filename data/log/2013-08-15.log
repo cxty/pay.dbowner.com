@@ -1,0 +1,19 @@
+2013-08-15 15:01:26 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-15 15:01:26 | 192.168.0.1 | /index.php/public/images/favicon.ico |public模块不存在
+2013-08-15 15:01:28 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-15 15:01:28 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-15 15:01:28 | 192.168.0.1 | /index.php/favicon.ico |favicon.ico模块不存在
+2013-08-15 15:04:25 | 192.168.0.1 | /index.php/callback/account-cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbDBTradeLogInfo` SET   WHERE  Status = 3 and AutoID in (  ) <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE  Status = 3 and AutoID in (  )' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-08-15 15:05:02 | 192.168.0.1 | /index.php/callback/account-cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbDBTradeLogInfo` SET   WHERE  Status = 3 and AutoID in (  ) <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE  Status = 3 and AutoID in (  )' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-08-15 15:07:44 | 192.168.0.1 | /index.php/callback/account-cGS6/uUOmFk= |	<b>出错</b>: MySQL Query Error<br>
+						<b>SQL</b>: UPDATE `tbDBTradeLogInfo` SET   WHERE  Status = 3 and AutoID in ( 65 ) <br>
+						<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE  Status = 3 and AutoID in ( 65 )' at line 1<br>
+						<b>错误代码</b>:1064<br>
+2013-08-15 20:57:31 | 220.181.158.109 | /index.php/product-xxx-<script language="php">echo "webscancfreer" |product-xxx-%3Cscript%20language=%22php%22%3Eecho%20%22webscancfreer%22模块不存在
+2013-08-15 21:01:05 | 220.181.158.109 | /index.php/home/cache/front_tmpl/xxx.php |home模块不存在

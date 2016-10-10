@@ -1,0 +1,201 @@
+body, button, input, select, textarea {
+    font: 14px/1.125 "Microsoft Yahei",Arial,Helvetica,sans-serif;
+	background: #f2f2f2;
+	text-align: center;
+}
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style-type: none;
+	margin:0px;
+}
+
+img {
+    border: 0 none;
+}
+
+.c_y{
+	color:red;
+}
+.c_p_l{
+	padding-left:20px;
+}
+
+.m_t_20{
+	margin-top:20px;
+}
+
+.input{
+	height:26px;
+	margin-top:5px;
+	padding:0 5px;
+	font-size:12px;
+	border: 1px solid #BEBEBE;
+	color:#3DAACF;
+	color: #ABABAB;
+	text-shadow: 0 1px 1px rgba(0, 0, 0.5, 0.5);
+    -webkit-border-radius:5px 5px 5px 5px;
+	   -moz-border-radius:5px 5px 5px 5px;
+		    border-radius:5px 5px 5px 5px;*
+}
+.input:hover{
+    border: 1px solid #49ACCF; 
+   
+	-webkit-box-shadow: 0 2px 2px #CCCCCC;
+       -moz-box-shadow: 0 2px 2px #CCCCCC;
+            box-shadow: 0 2px 2px #CCCCCC;
+}
+
+.changedb_btn{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	text-decoration:none;
+	background:#FD8104;
+	text-align:center;
+}
+.changedb_btn:hover{
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;
+	background:#f37a01;	
+    background-image: -moz-linear-gradient(top, #fc9025, #e47302); /* Firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fc9025), color-stop(1, #e47302)); /* Saf4+, Chrome */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc9025', endColorstr='#e47302', GradientType='0'); /* IE*/
+}
+.changedb_btn a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+section {
+    background: none repeat scroll 0 0 #f2f2f2;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    margin: 10px auto 0;
+    max-width: 300px;
+    text-align: left;
+}
+
+.header_wrap {  
+    width:100%;
+	height:40px;
+	line-height:40px;
+	background:url(../images/header_bg.png) 0 0 repeat #f2f2f2;
+	border-radius: 5px 5px 0 0;
+	text-align:center;
+}
+.header_wrap img{
+	vertical-align:middle;
+}
+.header_wrap .hd_logo{
+	width:35px;
+	margin:3px;
+	float:left;
+}
+.header_wrap .hd_back{
+	width:30px;
+	margin:5px;
+	float:right;
+	cursor:pointer;
+}
+.header_wrap span{
+	color:#ffffff;
+	font-size:20px;
+}
+
+.cont_wrap{
+	width:100%;
+	background:#ffffff;
+	border-radius: 0 0 5px 5px;
+	margin:0 auto;
+}
+.cont_box{
+	width:280px;
+	margin:0 auto;
+	padding:2px 0 20px;
+}
+
+.ct_box{
+	width:100%;
+	line-height:40px;
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid #a4a4a4;
+}
+.ct_exp{
+	margin-top:10px;
+	line-height:40px;
+}
+.ct_box li{
+	height:40px;
+}
+.ct_box li.ct_btn_wrap{
+	height:60px;
+	margin-top:20px;
+}
+.ct_ti{
+	text-indent:10px;
+}
+.ct_ti li:hover{
+	background:#eeeeee;
+	cursor:pointer;
+}
+.ct_box li .ct_go{
+	float:right;
+	/*background:url(../images/go.png) 0 0 repeat #f2f2f2;*/
+	width:16px;
+	height:16px;
+	margin-right:10px;
+	font-weight:bold;
+	color:#a4a4a4;
+}
+.ct_line_bd{
+	border-bottom:1px solid #a4a4a4;
+}
+.ct_box .ct_title{
+	float:left;
+	width:100px;
+	text-align:right;
+	clear:both;
+}
+.ct_box .ct_cont{
+	float:left;
+	width:180px;	
+}
+
+.changedb_payicon{
+	display:table-cell;
+}
+
+.changedb_payicon label{
+	width:31px;
+	height:16px;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.changedb_btn{
+	float:left;
+}
+
+/*=====pay_icon=====*/
+.alipay_icon{
+    background:url(../images/mo_pay.png) 0px 0px no-repeat;
+    width:31px;
+	height:15px;
+}
+.paypal_icon{
+    background:url(../images/mo_pay.png) 0px -16px no-repeat;
+    width:31px;
+	height:16px;
+}
+.b_r{
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+		    border-radius:5px;
+}
